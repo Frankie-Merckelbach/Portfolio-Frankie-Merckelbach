@@ -1,15 +1,47 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>PortfolioFrankieMerckelbach</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <!-- Page's intelligence = meta tags -->
+    <%= csrf_meta_tags %>
+    <meta name="description" content="Project Manager in Entertainment industry & Digital Product agent who focuses on strategy, design and creative solutions.">
+    <meta charset="utf-8">
+
+<!-- internet explorer to latest version meta -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+<!--Facebook meta info & Head -->
+    <meta property="og:title" content="Professional Portfolio - Frankie Merckelbach">
+    <meta property="og:image" content="facebook-card.jpg">
+    <meta property="og:description" content="Project Manager in Entertainment industry & Digital Product agent who focuses on strategy, design and creative solutions.">
+    <meta property="og:site_name" content="Frankie Merckelbach"/>
+<!-- End facebook info -->
+
+<!-- Head of website of google etc. -->
+    <title>Professional Portfolio</title>
+
+<!-- css styling link -->
+    <link rel="stylesheet" href="style.css">
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_pack_tag 'application' %>
+
+<!-- cdn link to paste in your <head> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap" rel="stylesheet">
+
+
   </head>
 
   <body>
+ <!-- Page's content = displayed on the page -->
+
+    <h1>My Portfolio, By Frankie Merckelbach</h1>
+
     <%= yield %>
+
+    <p>My Footer</p>  <!-- Add this -->
   </body>
+
 </html>
