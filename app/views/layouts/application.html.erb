@@ -36,12 +36,13 @@
 
   <body>
  <!-- Page's content = displayed on the page -->
-
+    <!-- sticky navbar via shared folder -->
+    <%= render 'shared/navbar' %>
     <h1>My Portfolio, By Frankie Merckelbach</h1>
 
     <%= yield %>
-
-    <p>My Footer</p>  <!-- Add this -->
+    <!-- footer link via shared folder -->
+    <%= render 'shared/footer' %>
   </body>
 
 </html>
